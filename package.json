@@ -6,7 +6,7 @@
   "dependencies": {},
   "devDependencies": {},
   "scripts": {
-    "build": "yarn workspace @kanaries/graphic-walker build",
+    "build": "yarn workspace @rodrigo-numera/graphic-walker build",
     "deploy": "yarn workspace playground deploy"
   },
   "workspaces": {
