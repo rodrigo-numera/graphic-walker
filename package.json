@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kanaries/graphic-walker.git"
+    "url": "git+https://github.com/rodrigo-numera/graphic-walker.git"
   },
   "keywords": ["visualization", "EDA", "data-analysis"],
   "author": "Kanaries Data Inc.",
