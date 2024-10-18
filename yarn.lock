@@ -2086,9 +2086,17 @@
     "@types/reactcss" "*"
 
 "@types/react-dom@*", "@types/react-dom@^18.2.15", "@types/react-dom@^18.x":
+<<<<<<< HEAD
   version "18.3.7"
   resolved "https://registry.npmjs.org/@types/react-dom/-/react-dom-18.3.7.tgz#b89ddf2cd83b4feafcc4e2ea41afdfb95a0d194f"
   integrity sha512-MEe3UeoENYVFXzoXEWsvcpg6ZvlrFNlOQ7EOsvhI3CfAXwzPfO8Qwuxd40nepsYKqyyVQnTdEfv68q91yLcKrQ==
+=======
+  version "18.3.1"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-18.3.1.tgz#1e4654c08a9cdcfb6594c780ac59b55aad42fe07"
+  integrity sha512-qW1Mfv8taImTthu4KoXgDfLuk4bydU6Q/TkADnDWWHwi4NX4BR+LWfTp2sVmTqRrsHvyDDTelgelxJ+SsejKKQ==
+  dependencies:
+    "@types/react" "*"
+>>>>>>> 1822adf0 (troca do nome para publish)
 
 "@types/react-syntax-highlighter@^15.5.10":
   version "15.5.10"
@@ -2098,9 +2106,15 @@
     "@types/react" "*"
 
 "@types/react@*", "@types/react@^18.2.37", "@types/react@^18.x":
+<<<<<<< HEAD
   version "18.3.23"
   resolved "https://registry.npmjs.org/@types/react/-/react-18.3.23.tgz#86ae6f6b95a48c418fecdaccc8069e0fbb63696a"
   integrity sha512-/LDXMQh55EzZQ0uVAZmKKhfENivEvWz6E+EYzh+/MCjMhNsotd+ZHhBGIjFDTi6+fz0OhQQQLbTgdQIxxCsC0w==
+=======
+  version "18.3.11"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.3.11.tgz#9d530601ff843ee0d7030d4227ea4360236bd537"
+  integrity sha512-r6QZ069rFTjrEYgFdOck1gK7FLVsgJE7tTz0pQBczlBNUhBNk0MQH4UbnFSwjpQLMkLzgqvBBa+qGpLje16eTQ==
+>>>>>>> 1822adf0 (troca do nome para publish)
   dependencies:
     "@types/prop-types" "*"
     csstype "^3.0.2"
