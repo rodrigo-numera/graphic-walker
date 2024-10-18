@@ -1,0 +1,39 @@
+name: Generate Package Tarball
+
+# Trigger manual usando `workflow_dispatch`
+on:
+  workflow_dispatch:  # Permite rodar o workflow manualmente
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout do código do repositório
+      - uses: actions/checkout@v4
+
+      # Configura o Node.js e aponta o registry para npmjs
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18.x'
+          registry-url: 'https://registry.npmjs.org'
+
+      # Instala as dependências usando Yarn
+      - name: Install deps
+        run: yarn install
+
+      # Constrói o pacote npm
+      - name: npm package build
+        run: yarn workspace @rodrigo-numera/graphic-walker build
+
+      # Gera o arquivo tarball (.tar.gz) do pacote
+      - name: Create tarball
+        run: npm pack
+        working-directory: ./packages/graphic-walker
+
+      # Salva o tarball como um artefato no GitHub Actions
+      - name: Upload tarball
+        uses: actions/upload-artifact@v3
+        with:
+          name: graphic-walker-tarball
+          path: ./packages/graphic-walker/*.tgz  # O arquivo gerado pelo npm pack
