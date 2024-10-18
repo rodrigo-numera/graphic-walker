@@ -27,7 +27,7 @@ jobs:
         run: yarn workspace @rodrigo-numera/graphic-walker build
 
       # Publica o pacote no npm
-      - run: npm publish
+      - run: npm publish --access public
         working-directory: ./packages/graphic-walker
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}  # Token de autenticação para o npm
