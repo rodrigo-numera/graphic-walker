@@ -2,7 +2,7 @@
   "name": "graphic-walker-home",
   "version": "1.0.0",
   "description": "![](https://img.shields.io/github/license/kanaries/graphic-walker) ![](https://img.shields.io/npm/v/@kanaries/graphic-walker) ![](https://img.shields.io/github/workflow/status/kanaries/graphic-walker/auto-build.yml)",
-  "private": true,
+  "private": false,
   "dependencies": {},
   "devDependencies": {},
   "scripts": {
