@@ -4,7 +4,7 @@ import { applyFilter, applySort, applyViewQuery, transformDataService } from "..
 export const dataQueryServer = async (
     rawData: IRow[],
     workflow: IDataQueryWorkflowStep[],
-    uid: string,   // Adiciona o UID como parâmetro
+    uid?: string,   // Adiciona o UID como parâmetro
     offset?: number,
     limit?: number,
 ): Promise<IRow[]> => {
