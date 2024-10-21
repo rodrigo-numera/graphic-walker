@@ -641,6 +641,7 @@ export interface IDataQueryPayload {
     tag?: string;
     limit?: number;
     offset?: number;
+    uid: string;
 }
 
 export interface ILoadDataPayload {
