@@ -3,9 +3,19 @@ import Spinner from './spinner';
 
 export default function LoadingLayer() {
     return (
-        <div className="bg-black/10 opacity-50 absolute top-0 left-0 right-0 bottom-0 z-50 flex items-center justify-center">
-            <Spinner className="text-primary w-4 h-4 mr-2" />
-            <span className="text-sm text-primary">Loading...</span>
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 transition-opacity duration-300">
+        <div className="grid grid-cols-3 gap-0.5">
+          {Array.from({ length: 9 }).map((_, index) => (
+            <div
+              key={index}
+              className={`w-2 h-2 animate-pulse ${index === 5 || index === 7 ? 'bg-blue-500' : 'bg-gray-700'}`}
+              style={{
+                animationDelay: `${index * 0.1}s`,
+                transition: 'opacity 0.3s ease', // Efeito de fade
+              }}
+            />
+          ))}
         </div>
+      </div>
     );
 }
