@@ -196,7 +196,7 @@ export default function EditableTabs(props: EditableTabsProps) {
                                                 });
                                             }}
                                         >
-                                            Edit
+                                            Editar
                                         </DropdownMenuItem>
                                         <DropdownMenuItem
                                             className="text-xs"
@@ -205,7 +205,7 @@ export default function EditableTabs(props: EditableTabsProps) {
                                                 onDuplicate?.(tabIndex);
                                             }}
                                         >
-                                            Duplicate
+                                            Duplicar
                                         </DropdownMenuItem>
                                         {showRemove && (
                                             <DropdownMenuItem
@@ -215,7 +215,7 @@ export default function EditableTabs(props: EditableTabsProps) {
                                                     onRemove?.(tabIndex);
                                                 }}
                                             >
-                                                Remove
+                                                Remover
                                             </DropdownMenuItem>
                                         )}
                                     </DropdownMenuContent>
