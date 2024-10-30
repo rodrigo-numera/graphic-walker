@@ -100,7 +100,7 @@ export class VizSpecStore {
         }
     ) {
         this.meta = meta;
-        this.visList = options?.empty ? [] : [fromFields(meta, 'Chart 1', options?.defaultConfig)];
+        this.visList = options?.empty ? [] : [fromFields(meta, 'Gráfico 1', options?.defaultConfig)];
         this.createdVis = this.visList.length;
         this.defaultConfig = options?.defaultConfig;
         this.onMetaChange = options?.onMetaChange;
@@ -393,7 +393,7 @@ export class VizSpecStore {
         this.defaultConfig = defaultConfig;
     }
 
-    resetVisualization(name = 'Chart 1') {
+    resetVisualization(name = 'Gráfico 1') {
         this.visList = [fromFields(this.meta, name, this.defaultConfig)];
         this.createdVis = 1;
     }

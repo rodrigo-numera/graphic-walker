@@ -93,7 +93,7 @@ export const RendererApp = observer(function VizApp(props: BaseVizProps) {
 
     useEffect(() => {
         if (spec) {
-            vizStore.replaceNow(renderSpec(spec, vizStore.meta, vizStore.currentVis.name ?? 'Chart 1', vizStore.currentVis.visId));
+            vizStore.replaceNow(renderSpec(spec, vizStore.meta, vizStore.currentVis.name ?? 'Gráfico 1', vizStore.currentVis.visId));
         }
     }, [spec, vizStore]);
 
@@ -110,7 +110,7 @@ export const RendererApp = observer(function VizApp(props: BaseVizProps) {
                 VegaliteMapper(
                     spec,
                     [...emptyChart.encodings.dimensions, ...emptyChart.encodings.measures],
-                    vizStore.currentVis.name ?? 'Chart 1',
+                    vizStore.currentVis.name ?? 'Gráfico 1',
                     vizStore.currentVis.visId
                 )
             );

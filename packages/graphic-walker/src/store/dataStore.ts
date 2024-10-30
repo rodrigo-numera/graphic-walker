@@ -94,7 +94,7 @@ export class DataStore {
             name: data.name,
         });
         if (!this.visDict[metaId]) {
-            this.visDict[metaId] = [exportFullRaw(fromFields(data.fields, 'Chart 1'))];
+            this.visDict[metaId] = [exportFullRaw(fromFields(data.fields, 'Gráfico 1'))];
         }
         return id;
     }
