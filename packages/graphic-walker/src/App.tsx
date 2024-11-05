@@ -152,7 +152,7 @@ export const VizApp = observer(function VizApp(props: BaseVizProps) {
                     vegaThemeContext={{ vizThemeConfig: props.vizThemeConfig ?? props.themeConfig ?? props.themeKey }}
                     portalContainerContext={portal}
                 >
-                    <div className={classNames(`App font-sans bg-background text-foreground m-0 p-0`, darkMode === 'dark' ? 'dark' : '')}>
+                    <div className={classNames(`App font-sans bg-background text-foreground m-0 p-0 overflow-clip`, darkMode === 'dark' ? 'dark' : '')}>
                         <FieldsContextWrapper>
                             <div className="bg-background text-foreground">
                                 <Errorpanel />
