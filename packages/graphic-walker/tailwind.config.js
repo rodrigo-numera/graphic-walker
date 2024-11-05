@@ -11,6 +11,9 @@ module.exports = {
             },
         },
         extend: {
+            overflow: {
+                clip: 'clip',
+              },
             gap: {
                 '0.5': '0.125rem',
               },
