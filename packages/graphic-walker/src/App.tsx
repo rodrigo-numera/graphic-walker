@@ -157,7 +157,7 @@ export const VizApp = observer(function VizApp(props: BaseVizProps) {
                             <div className="bg-background text-foreground">
                                 <Errorpanel />
                                 <Tabs value={segmentKey} onValueChange={(v) => vizStore.setSegmentKey(v as ISegmentKey)}>
-{/*                                     <TabsList className="mx-4">
+                              {/* <TabsList className="mx-4">
                                         <TabsTrigger value={ISegmentKey.data}>
                                             <CircleStackIcon className="w-4 mr-2" /> {t('App.segments.data')}
                                         </TabsTrigger>
